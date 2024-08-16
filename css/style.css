@@ -305,6 +305,234 @@ a:hover {
   }
 }
 
+/* General Activity Section Styling */
+.activity {
+  padding: 60px 0;
+  background-color: #f9f9f9;
+}
+
+.activity .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.activity .section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* .activity .section-title span {
+  font-size: 24px;
+  display: block;
+  color: #f39c12;
+} */
+
+.activity .section-title h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 10px 0;
+  color: #333;
+}
+
+.activity .section-title p {
+  font-size: 16px;
+  color: #777;
+}
+
+/* Icon Box Styling */
+.activity .icon-box {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+}
+
+.activity .icon-box:hover {
+  transform: translateY(-10px);
+}
+
+.activity .icon-box .icon {
+  margin-bottom: 20px;
+}
+
+.activity .icon-box .icon i {
+  font-size: 40px;
+  color: #f39c12;
+}
+
+.activity .icon-box h4 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.activity .icon-box h4 a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.activity .icon-box h4 a:hover {
+  color: #128ef3;
+}
+
+.activity .icon-box p {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 0;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .activity .icon-box {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .activity .icon-box {
+    margin-bottom: 20px;
+  }
+
+  .activity .section-title h2 {
+    font-size: 28px;
+  }
+
+  .activity .section-title p {
+    font-size: 14px;
+  }
+}
+
+
+.hover-blue {
+  color: blue; /* Default color */
+  transition: color 0.3s ease; /* Smooth transition for color change */
+  font-weight: 600;
+}
+
+.hover-blue:hover {
+  color: red; /* Color on hover */
+}
+
+
+
+/* General Portfolio Section Styling */
+.portfolio {
+  padding: 60px 0;
+  background-color: #f9f9f9;
+}
+
+.portfolio-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.portfolio-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* .portfolio-title span {
+  font-size: 24px;
+  display: block;
+  color: #3498db;
+} */
+
+.portfolio-title h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 10px 0;
+  color: #333;
+}
+
+.portfolio-title p {
+  font-size: 16px;
+  color: #777;
+}
+
+/* Portfolio Item Box Styling */
+.portfolio-row {
+  display: flex;
+  justify-content: space-between; /* Adjusts the space between the cards */
+  flex-wrap: nowrap; /* Prevents wrapping to ensure all items are in a single row */
+}
+
+.portfolio-icon-box {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  width: 100%; /* Adjusts the width of each card to fit within the container */
+  margin-right: 5px; /* Adds space between the cards */
+  height:100%
+}
+
+.portfolio-icon-box:hover {
+  transform: translateY(-10px);
+}
+
+.portfolio-icon {
+  margin-bottom: 20px;
+}
+
+.portfolio-icon i {
+  font-size: 40px;
+  color: #3498db;
+}
+
+.portfolio-title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.portfolio-title a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.portfolio-title a:hover {
+  color: #3498db;
+}
+
+.portfolio-description {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 0;
+}
+
+
+/* Responsive Styling */
+@media (max-width: 1200px) {
+  .portfolio-icon-box {
+    width: 32%;
+  }
+}
+
+@media (max-width: 992px) {
+  .portfolio-icon-box {
+    width: 48%;
+  }
+}
+
+@media (max-width: 768px) {
+  .portfolio-row {
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  }
+
+  .portfolio-icon-box {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
@@ -741,16 +969,6 @@ section {
 }
 
 
-.map{
-  flex: 1 1 25em;
-  border: 1rem solid #fff;
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
-  border: .5rem;
-  /* width: 100%; */
-  height: 405px;
-  padding: 8px;
-}
-
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
@@ -815,3 +1033,5 @@ section {
 #footer .copyright {
   margin: 0 0 5px 0;
 }
+
+
