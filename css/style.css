@@ -914,8 +914,8 @@ section {
   height: 10px;
   transition: 0.9s;
   background-color: #f9004d;
-  border-top-right-radius: 50%;
-  border-bottom-right-radius: 50%;
+/*   border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%; */
 }
 
 /*--------------------------------------------------------------
